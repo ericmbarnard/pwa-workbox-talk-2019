@@ -11,7 +11,8 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
-    "typescript": "3.3.3333"
+    "typescript": "3.3.3333",
+    "react-app-rewired": "^2.1.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -31,7 +32,5 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-app-rewired": "^2.1.0",
-    "webpack-cli": "^3.2.3"
   }
 }
