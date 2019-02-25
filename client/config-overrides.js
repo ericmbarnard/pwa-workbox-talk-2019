@@ -12,8 +12,6 @@ module.exports = {
             return (x instanceof WorkboxWebpackPlugin.GenerateSW)
         });
 
-        console.log(oldWorkBoxPlugin);
-
         if (!oldWorkBoxPlugin) {
             return config;
         }

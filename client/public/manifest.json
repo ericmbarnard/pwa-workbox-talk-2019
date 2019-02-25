@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PWA Workbox Talk",
+  "name": "PWA Workbox Talk",
   "icons": [
     {
       "src": "favicon.ico",
