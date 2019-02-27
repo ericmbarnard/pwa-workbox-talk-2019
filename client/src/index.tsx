@@ -12,7 +12,7 @@ import * as chartAreaDemo from './demo/chart-area-demo'
 import * as datatablesDemo from './demo/datatables-demo'
 
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -23,4 +23,3 @@ datatablesDemo.setup();
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.register();
-
