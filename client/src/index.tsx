@@ -14,12 +14,52 @@ import * as datatablesDemo from './demo/datatables-demo'
 import App from './App';
 import * as serviceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { fetchData } from './data'
 
-chartAreaDemo.setup();
-datatablesDemo.setup();
+async function main() {
+
+    const data = await Promise.all([
+        fetchData(),
+        fetchData(),
+        fetchData(),
+        fetchData()
+    ]);
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+
+    // Demo stuff...
+    chartAreaDemo.setup();
+    datatablesDemo.setup();
+
+    console.log('Data!');
+    console.log(data);
+}
+
+main();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.register();
+
+
+
+
+
+/*
+
+async function main() {
+
+    const data = await fetchData();
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+
+    // Demo stuff...
+    chartAreaDemo.setup();
+    datatablesDemo.setup();
+
+    console.log('Data!');
+    console.log(data);
+}
+
+*/

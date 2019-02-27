@@ -23,6 +23,14 @@ app.use((req, res, next) => {
     });
 });
 
+
+app.get('/api/some-data', (req, res, next) => {
+    res.json({
+        data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451]
+    });
+});
+
+
 app.get('*', (req, res) => {
     res.set({
         'Last-Modified': Date.now()
